@@ -5,14 +5,14 @@ import { TaikativeDirectiveDirective } from './Directives/taikative-directive.di
 import { WheelComponentComponent } from './Components/wheel-component/wheel-component.component';
 import {  errorMessage } from './Pipes/error-message.pipe';
 import { PlaceholderComponent } from './Components/placeholder/placeholder.component';
-
+import { FormsModule } from '@angular/forms';
 
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,CommonModule,TaikativeDirectiveDirective,WheelComponentComponent,errorMessage,PlaceholderComponent],
+  imports: [RouterOutlet,CommonModule,TaikativeDirectiveDirective,WheelComponentComponent,errorMessage,PlaceholderComponent,FormsModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

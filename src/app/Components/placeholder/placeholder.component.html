@@ -1,4 +1,7 @@
-<p [ngStyle]="{'color': isEmpty ? '#ccc' : ''}">
-    {{ model.text | errorMessage : model }}
+
+<div>
+  <input type="text" [(ngModel)]="model.text" placeholder="Enter text" />
+  <p [ngClass]="{'error': empty}" [ngStyle]="{'color': empty ? 'red' : 'black'}">
+    {{ model.text | errorMessage:model }}
   </p>
-  
+</div>
