@@ -18,4 +18,5 @@ export class PlaceholderComponent {
   get empty(): boolean {
     return !this.model.text || this.model.text.length < (this.model.minLength ?? 0);
   }
+ 
 }
