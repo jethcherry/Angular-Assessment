@@ -1,3 +1,4 @@
+
 import { Pipe, PipeTransform } from '@angular/core';
 import { Placeholder } from '../Models/ErrorMessages';
 
@@ -5,7 +6,7 @@ import { Placeholder } from '../Models/ErrorMessages';
   name: 'errorMessage',
   standalone: true,
 })
-export class ErrorMessage implements PipeTransform {
+export class errorMessage implements PipeTransform {
   transform(value: string, model: Placeholder): string {
     if (!value || value.length < (model.minLength ?? 0)) {
       return model.placeholder;
